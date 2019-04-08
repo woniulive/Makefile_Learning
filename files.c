@@ -4,6 +4,6 @@
 
 void file_print(void)
 {
-    printf("this is file.c");
+    printf("this is file.c\n");
 }
 

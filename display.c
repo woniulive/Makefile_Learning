@@ -3,6 +3,6 @@
 
 void display_print(void)
 {
-    printf("this is display.c");
+    printf("this is display.c\n");
 }
 

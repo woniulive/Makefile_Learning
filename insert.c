@@ -3,6 +3,6 @@
 
 void insert_print(void)
 {
-    printf("this is insert.c");
+    printf("this is insert.c\n");
 }
 

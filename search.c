@@ -3,6 +3,6 @@
 
 void search_print(void)
 {
-    printf("this is search.c");
+    printf("this is search.c\n");
 }
 

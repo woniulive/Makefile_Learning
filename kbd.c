@@ -3,6 +3,6 @@
 
 void print(void)
 {
-    printf("this is kbd.c");
+    printf("this is kbd.c\n");
 }
 

@@ -2,6 +2,6 @@
 
 void utils_print(void)
 {
-    printf("this is utils.c");
+    printf("this is utils.c\n");
 }
 

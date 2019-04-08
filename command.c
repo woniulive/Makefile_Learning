@@ -3,6 +3,6 @@
 
 void command_print(void)
 {
-    printf("this is command.c");
+    printf("this is command.c\n");
 }
 
