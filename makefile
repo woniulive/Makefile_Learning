@@ -11,6 +11,9 @@ edit :  $(objects)
 #when include file not found
 #just add - in front of include 
 #like this: -include make/makefile
+
+#since makefile use first goal as final goal
+#so include should call after edit(final goal)
 include show/makefile
 
 main.o : defs.h
