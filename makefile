@@ -1,8 +1,17 @@
+
+
 objects = main.o kbd.o command.o display.o \
-	insert.o search.o files.o utils.o
+	insert.o search.o files.o utils.o show/show.o
 
 edit :  $(objects)
-	cc -o edit $(objects)
+	cc $(CFLAGS) -o edit $(objects)
+
+#include show file 
+#if you want to ignore makefile error
+#when include file not found
+#just add - in front of include 
+#like this: -include make/makefile
+include show/makefile
 
 main.o : defs.h
 kbd.o : defs.h command.h

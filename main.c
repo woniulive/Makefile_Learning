@@ -1,4 +1,5 @@
 #include "defs.h"
+#include "show.h"
 
 void main_print(void)
 {
@@ -8,5 +9,6 @@ void main_print(void)
 int main(void)
 {
     printf("this is main entry\n");
+    show_print();
     return 0;
 }
