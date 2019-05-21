@@ -1,7 +1,7 @@
 
 
 objects = main.o kbd.o command.o display.o \
-	insert.o search.o files.o utils.o show/show.o
+	insert.o search.o files.o utils.o show/show.o show/add.o
 
 edit :  $(objects)
 	cc $(CFLAGS) -o edit $(objects)
@@ -25,7 +25,9 @@ search.o : defs.h buffer.h
 files.o : defs.h buffer.h command.h
 utils.o : defs.h
 
-.PHONY : clean
-clean : 
-	-rm edit $(objects)
+.PHONY : cleanall cleanobj
+cleanall : cleanobj
+	-rm edit
+cleanobj : 
+	-rm $(objects)
 
